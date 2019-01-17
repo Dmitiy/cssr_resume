@@ -1,11 +1,16 @@
-mixin form-item(id, type, label, name, value)
-    .form-item.bottom-line
-        label(for=id)= label
-        input(type=type, id=id, name=name, value=value)
-
+mixin form-item(type, id, label, name, value)
+    li.form-item
+        .form-item__prepend
+            label(for=id)= label
+        .form-item__append
+            input(type=type, id=id, name=name, value=value)
+            .bottom-line
+        
 form(autocomplete='off', name='about-person')
-    +form-item('form-name', 'text', 'Полное ФИО', 'form-name', userProfile.fio)
-    +form-item('form-year', 'text', 'Год рождения', 'form-year', userProfile.year)
-    +form-item('form-location', 'text', 'Место жительства', 'form-location', userProfile.location)
-    +form-item('form-skype', 'text', 'Скайп', 'form-skype', userProfile.skype)
-    +form-item('form-email', 'email', 'Почта', 'form-email', userProfile.mail)
+    ul.form-item-list
+        +form-item('text', 'form-name',  'Полное ФИО', 'form-name', userProfile.fio)
+        +form-item('text', 'form-year',  'Год рождения', 'form-year', userProfile.year)
+        +form-item('text', 'form-location',  'Место жительства', 'form-location', userProfile.location)
+        +form-item('text', 'form-skype',  'Скайп', 'form-skype', userProfile.skype)
+        +form-item('email','form-email',  'Почта', 'form-email', userProfile.mail)
+

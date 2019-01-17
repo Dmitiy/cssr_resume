@@ -22,6 +22,12 @@
         margin-right: 117px;
     }
 
+    .helper-image {
+        position: absolute;
+        top: 48px;
+        right: 54px;
+    }
+
     header {
         padding-top: 62px;
         padding-bottom: 40px;
@@ -33,12 +39,6 @@
         vertical-align: top;
     }
 
-    .helper-image {
-        position: absolute;
-        top: 48px;
-        right: 54px;
-    }
-
     input[type='text'],
     input[type='email'],
     input[type='date'] {
@@ -48,9 +48,6 @@
         font-family: 'Courier New';
         background-color: transparent;
         border: none;
-        position: relative;
-        top: -21px;
-        padding-right: 10px;
     }
 
     main {
@@ -64,94 +61,106 @@
         }
 
         .form-about-person {
+            margin-bottom: 44px;
+
             form[name='about-person'] {
-                height: 342px;
-                width: 100%;
-                display: block;
+                ul {
+                    &.form-item-list {
+                        li {
+                            display: flex;
 
-                .form-item {
-                    &:first-child {
-                        top: 8px;
+                            &:first-child {
+                                margin-bottom: 10px;
+
+                                .form-item__prepend {
+                                    flex-basis: 136px;
+                                }
+
+                                .form-item__append {
+                                    flex: 1;
+
+                                    input[type='text'] {
+                                        top: -6px;
+                                        margin-bottom: -2px;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                margin-bottom: 13px;
+
+                                .form-item__prepend {
+                                    flex-basis: 144px;
+                                }
+
+                                .form-item__append {
+                                    flex: 1;
+
+                                    input[type='text'] {
+                                        top: -6px;
+                                        margin-bottom: -1px;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                margin-bottom: 13px;
+
+                                .form-item__prepend {
+                                    flex-basis: 187px;
+                                }
+
+                                .form-item__append {
+                                    flex: 1;
+
+                                    input[type='text'] {
+                                        top: -6px;
+                                        margin-bottom: -2px;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(4) {
+                                margin-bottom: 13px;
+
+                                .form-item__prepend {
+                                    flex-basis: 67px;
+                                }
+
+                                .form-item__append {
+                                    flex: 1;
+
+                                    input[type='text'] {
+                                        top: -6px;
+                                        margin-bottom: -2px;
+                                    }
+                                }
+                            }
+
+                            &:last-child {
+                                .form-item__prepend {
+                                    flex-basis: 67px;
+                                }
+
+                                .form-item__append {
+                                    flex: 1;
+
+                                    input[type='email'] {
+                                        top: -6px;
+                                        margin-bottom: -4px;
+                                    }
+                                }
+                            }
+                        }
                     }
+                }
 
-                    &:nth-child(2) {
-                        top: 18px;
-                    }
-
-                    &:nth-child(3) {
-                        top: 30px;
-                    }
-
-                    &:nth-child(4) {
-                        top: 43px;
-                    }
-
-                    &:last-child {
-                        top: 54px;
-                    }
-
-                    label {
-                        &[for='form-name'] {
-                            padding-right: 18px;
-                        }
-
-                        &[for='form-year'] {
-                            padding-right: 16px;
-                        }
-
-                        &[for='form-location'] {
-                            padding-right: 19px;
-                        }
-
-                        &[for='form-email'] {
-                            top: -4px;
-                        }
-                    }
-
-                    input {
-                        &#form-name {
-                            left: 13px;
-                        }
-
-                        &#form-year {
-                            left: 11px;
-                        }
-
-                        &#form-skype {
-                            top: -18px;
-                        }
-
-                        &#form-email {
-                            top: -18px;
-                        }
-
-                        &#form-location,
-                        &#form-skype,
-                        &#form-email {
-                            left: 9px;
-                        }
-
-                        &#form-name {
-                            width: calc(100% - 180px);
-                        }
-
-                        &#form-year {
-                            width: calc(100% - 178px);
-                        }
-
-                        &#form-location {
-                            width: calc(100% - 220px);
-                        }
-
-                        &#form-skype {
-                            width: calc(100% - 237px);
-                        }
-
-                        &#form-skype,
-                        &#form-email {
-                            width: calc(100% - 100px);
-                        }
-                    }
+                input[type='text'],
+                input[type='email'] {
+                    position: relative;
+                    width: 100%;
+                    padding-left: 22px;
+                    padding-right: 10px;
                 }
             }
         }
@@ -160,23 +169,20 @@
     .bottom-line {
         background-image: url(../img/line@1X.png);
         background-repeat: no-repeat;
+        width: 100%;
+        height: 4px;
     }
 
-    .form-item {
-        position: relative;
-
-        label {
-            font-size: 22px;
-            line-height: 50px;
-            font-family: 'PT_Sans-Web-Bold';
-            font-weight: bold;
-            color: #2f1b15;
-            background-image: url(../img/bg.png);
-            padding-right: 16px;
-            position: relative;
-            top: -8px;
-        }
+    .form-item label,
+    .label-text {
+        font-size: 22px;
+        line-height: 50px;
+        font-family: 'PT_Sans-Web-Bold';
+        font-weight: bold;
+        color: #2f1b15;
     }
+
+
 
     .article {
         h4 {
@@ -191,16 +197,26 @@
             font-family: 'PT_Sans-Web-Regular';
             font-size: 15px;
             line-height: 23px;
-            margin-bottom: 26px;
+            margin-bottom: 25px;
         }
     }
 
     .level-up-js {
-        margin-top: 7px;
+        margin-bottom: 84px;
+
+        .article {
+            h4 {
+                margin-bottom: 32px;
+            }
+        }
 
         .sliderContainer {
             width: 100%;
             display: block;
+
+            &.bottom-line {
+                margin-left: -3px;
+            }
 
             .slider {
                 appearance: none;
@@ -208,7 +224,8 @@
                 outline: none;
                 background-color: transparent;
                 border: none;
-                height: 43px;
+                position: relative;
+                top: -17px;
 
                 &::-webkit-slider-thumb {
                     appearance: none;
@@ -221,7 +238,7 @@
             }
 
             ul {
-                margin-bottom: 10px;
+                margin-bottom: 2px;
 
                 &.deviders-box {
                     position: relative;
@@ -230,6 +247,7 @@
                         position: absolute;
 
                         &.devider-vert-md {
+                            top: -29px;
                             display: inline-block;
                             vertical-align: top;
                             height: 26px;
@@ -238,28 +256,25 @@
                         }
 
                         &.devider-vert-sm {
+                            top: -26px;
                             height: 11px;
                             width: 20px;
                             background: url('../img/vert_devider_sm@1X.png') no-repeat;
                         }
 
                         &:first-child {
-                            top: -21px;
-                            left: 5px;
+                            left: 2px;
                         }
 
                         &:nth-child(2) {
-                            top: -18px;
                             left: 145px;
                         }
 
                         &:nth-child(3) {
-                            top: -18px;
                             left: 370px;
                         }
 
                         &:last-child {
-                            top: -21px;
                             right: -13px;
                         }
                     }
@@ -272,15 +287,12 @@
                     grid-template-columns: 147px 228px 259px 142px;
 
                     li {
-                        // position: relative;
 
                         &:first-child {
                             strong {
                                 padding-left: 4px;
                             }
                         }
-
-                        &:nth-child(2) {}
 
                         &:nth-child(3) {
                             display: flex;
@@ -295,7 +307,6 @@
             }
         }
     }
-
 
     .tech-list {
         margin-bottom: 40px;
@@ -433,7 +444,7 @@
     }
 
     .future-plans {
-        margin-bottom: 86px;
+        margin-bottom: 77px;
 
         .article {
             h4 {
@@ -456,6 +467,11 @@
                 &.input-item {
                     label {
                         padding-left: 32px;
+
+                        &[for='js'],
+                        &[for='manager'] {
+                            letter-spacing: -0.45px;
+                        }
                     }
                 }
             }
@@ -467,8 +483,31 @@
     }
 
     footer {
-        .form-item {
-            width: 205px;
+        padding-bottom: 60px;
+
+        .calendar-form {
+            .form-item {
+                display: flex;
+
+                input[type='date'] {
+                    letter-spacing: -.25px;
+                    position: relative;
+                    top: -12px;
+                    left: 30px;
+                }
+
+                .calendar {
+                    position: relative;
+
+                    .bottom-line {
+                        width: 212px;
+                        height: 60px;
+                        position: absolute;
+                        top: 32px;
+                        left: 15px;
+                    }
+                }
+            }
         }
     }
 }

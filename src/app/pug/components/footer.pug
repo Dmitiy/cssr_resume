@@ -1,3 +1,7 @@
-.form-item.bottom-line
-    label(for='form-calendar') Дата заполнения
-    input#form-calendar(type="date", name="calendar", value="2019-01-01")
+.calendar-form
+    .form-item
+        span.label-text Дата заполнения
+        ul.calendar
+            li
+                input(type="date", name="calendar", value="2019-01-01")
+            li.bottom-line
