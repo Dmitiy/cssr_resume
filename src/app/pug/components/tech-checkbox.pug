@@ -1,0 +1,39 @@
+mixin tech-checkbox(name, title, type, isChecked)
+    .input-item
+        input(type=type, name=name, checked=isChecked, id=name)
+        label(for=name)= title
+
+li.box-1
+    +tech-checkbox('BEM', 'БЭМ/OOCSS', 'checkbox', false)
+    +tech-checkbox('pug', 'Pug (Jade)', 'checkbox', true)
+    +tech-checkbox('css', 'Stylus/LESS/SASS', 'checkbox', true)
+    +tech-checkbox('svg', 'Работаю с SVG', 'checkbox', false)
+    +tech-checkbox('html5', 'Верстаю семантично', 'checkbox', true)
+    +tech-checkbox('a11y', 'Accessibility (A11Y)', 'checkbox', false)
+    +tech-checkbox('es', 'ES2015/ES2016', 'checkbox', true)
+li.box-2
+    +tech-checkbox('runTasks', 'Gulp/GRUNT', 'checkbox', true)
+    +tech-checkbox('webpack', 'Webpack', 'checkbox', true)
+    +tech-checkbox('webgl', 'Дружу с WebGL', 'checkbox', false)
+    +tech-checkbox('jq', 'jQuery', 'checkbox', true)
+    +tech-checkbox('ng', 'Знаю/изучаю Angular', 'checkbox', false)
+    +tech-checkbox('react', 'Изучаю/знаю React', 'checkbox', true)
+    +tech-checkbox('node', 'Изучаю/знаю Node.js', 'checkbox', false)
+li.box-3
+    +tech-checkbox('git', 'Использую Git', 'checkbox', true)
+    .input-item
+        input#pixelperfect(type="checkbox", name="pixelperfect", checked=true)
+        label(for='pixelperfect').label-pixelperfect
+            span С
+            span глазомером
+            span всё
+            span ок
+    .input-item
+        input#blogCSSR(type="checkbox", name="cssr", checked=false)
+        label.label-blogCSSR(for='blogCSSR') Читаю 
+            a.linkToBlog(href='http://blog.csssr.ru', title='blog.csssr.ru', target='_blank') blog.csssr.ru
+    +tech-checkbox('lazy', 'Я ленивый(-ая)', 'checkbox', false)
+    .input-item
+        input#langEng(type="checkbox", name="lang", checked=false)
+        label(for='langEng').label-lang У меня хороший 
+            span английский

@@ -1,0 +1,11 @@
+mixin form-item(id, type, label, name, value)
+    .form-item.bottom-line
+        label(for=id)= label
+        input(type=type, id=id, name=name, value=value)
+
+form(autocomplete='off', name='about-person')
+    +form-item('form-name', 'text', 'Полное ФИО', 'form-name', userProfile.fio)
+    +form-item('form-year', 'text', 'Год рождения', 'form-year', userProfile.year)
+    +form-item('form-location', 'text', 'Место жительства', 'form-location', userProfile.location)
+    +form-item('form-skype', 'text', 'Скайп', 'form-skype', userProfile.skype)
+    +form-item('form-email', 'email', 'Почта', 'form-email', userProfile.mail)
