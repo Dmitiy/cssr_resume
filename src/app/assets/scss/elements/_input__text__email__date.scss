@@ -1,0 +1,12 @@
+@import '_vars.scss';
+
+input[type='text'],
+input[type='email'],
+input[type='date'] {
+    color: #231f20;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Courier New';
+    background-color: transparent;
+    border: none;
+}

@@ -1,0 +1,36 @@
+@import '_vars.scss';
+
+.future-plans {
+    margin-bottom: 77px;
+
+    .article {
+        h4 {
+            margin-bottom: -2px;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+    }
+
+    .future-plans-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 130px 226px 184px 230px;
+
+        li {
+            &.input-item {
+                label {
+                    padding-left: 32px;
+
+                    &[for='js'],
+                    &[for='manager'] {
+                        letter-spacing: -0.45px;
+                    }
+                }
+            }
+        }
+    }
+}

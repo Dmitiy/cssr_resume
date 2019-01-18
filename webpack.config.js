@@ -7,7 +7,8 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const cleanPlugin = new CleanWebpackPlugin(['public']);
+
+const cleanPlugin = new CleanWebpackPlugin(['dist']);
 
 const isProduction = (process.env.NODE_ENV === 'production');
 

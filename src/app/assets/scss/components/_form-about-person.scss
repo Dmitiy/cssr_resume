@@ -1,0 +1,106 @@
+@import '_vars.scss';
+
+.form-about-person {
+    margin-bottom: 44px;
+
+    form[name='about-person'] {
+        ul {
+            &.form-item-list {
+                li {
+                    display: flex;
+
+                    input[type='text'],
+                    input[type='email'] {
+                        position: relative;
+                        width: 100%;
+                        padding-left: 22px;
+                        padding-right: 10px;
+                    }
+
+                    &:first-child {
+                        margin-bottom: 10px;
+
+                        .form-item__prepend {
+                            flex-basis: 136px;
+                        }
+
+                        .form-item__append {
+                            flex: 1;
+
+                            input[type='text'] {
+                                top: -6px;
+                                margin-bottom: -2px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        margin-bottom: 13px;
+
+                        .form-item__prepend {
+                            flex-basis: 144px;
+                        }
+
+                        .form-item__append {
+                            flex: 1;
+
+                            input[type='text'] {
+                                top: -6px;
+                                margin-bottom: -1px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        margin-bottom: 13px;
+
+                        .form-item__prepend {
+                            flex-basis: 187px;
+                        }
+
+                        .form-item__append {
+                            flex: 1;
+
+                            input[type='text'] {
+                                top: -6px;
+                                margin-bottom: -2px;
+                            }
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        margin-bottom: 13px;
+
+                        .form-item__prepend {
+                            flex-basis: 67px;
+                        }
+
+                        .form-item__append {
+                            flex: 1;
+
+                            input[type='text'] {
+                                top: -6px;
+                                margin-bottom: -2px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        .form-item__prepend {
+                            flex-basis: 67px;
+                        }
+
+                        .form-item__append {
+                            flex: 1;
+
+                            input[type='email'] {
+                                top: -6px;
+                                margin-bottom: -4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

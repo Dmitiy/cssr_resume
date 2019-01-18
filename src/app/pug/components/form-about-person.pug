@@ -1,9 +1,9 @@
-mixin form-item(type, id, label, name, value)
+mixin form-item( kind, id, label, name, value )
     li.form-item
         .form-item__prepend
-            label(for=id)= label
+            label(for= id)= label
         .form-item__append
-            input(type=type, id=id, name=name, value=value)
+            input(type= kind, id= id, name= name, value= value)
             .bottom-line
         
 form(autocomplete='off', name='about-person')
@@ -12,5 +12,5 @@ form(autocomplete='off', name='about-person')
         +form-item('text', 'form-year',  'Год рождения', 'form-year', userProfile.year)
         +form-item('text', 'form-location',  'Место жительства', 'form-location', userProfile.location)
         +form-item('text', 'form-skype',  'Скайп', 'form-skype', userProfile.skype)
-        +form-item('email','form-email',  'Почта', 'form-email', userProfile.mail)
+        +form-item('email', 'form-email',  'Почта', 'form-email', userProfile.mail)
 

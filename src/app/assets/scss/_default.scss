@@ -58,35 +58,5 @@ button {
 }
 
 input {
-    -webkit-appearance: none;
     appearance: none;
-
-    &:focus {
-        background-color: #fafafa;
-        border: 2px solid #ebebeb;
-        color: #808080;
-        cursor: text;
-    }
-}
-
-input,
-button {
-    color: #b2b2b2;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #ebebeb;
-    font-size: 12px;
-}
-
-
-a {
-    font-size: 13px;
-    font-family: 'PT Sans';
-    line-height: 20px;
-    color: #b2b2b2;
-    background-color: transparent;
-
-    &:hover {
-        color: #808080;
-    }
 }

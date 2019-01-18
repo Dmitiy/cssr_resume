@@ -1,0 +1,25 @@
+@import '_vars.scss';
+
+a {
+    color: #1f5f97;
+    font-size: inherit;
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 25px;
+    font-family: 'PT_Sans-Web-Bold';
+    position: relative;
+    top: 2px;
+
+}
+
+.linkToBlog {
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #1f5f97;
+    }
+}
