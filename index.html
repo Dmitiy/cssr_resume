@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -12,10 +12,12 @@
 
 <body>
     <div class="page">
-        <div class="helper-image"><img src="assets/img/secret@1X.png" alt="секретно заполнено собственноручно" title="секретно заполнено собственноручно"></div>
+        <div class="helper-image__stamp"><img src="assets/img/secret@1X.png" alt="секретно заполнено собственноручно"
+                title="секретно заполнено собственноручно"></div>
         <div class="wrapper">
             <header>
-                <div class="logo"><img src="assets/img/logo@1X.png" alt="cssr" title="cssr"></div>
+                <div class="logo"><a href="http://csssr.com/ru" target="_blank"><img src="assets/img/logo@1X.png" alt="cssr"
+                            title="cssr"></a></div>
             </header>
             <main>
                 <section class="title-image"><img src="assets/img/case@1X.png" alt="дело" title="дело"></section>
@@ -154,8 +156,8 @@
                             </div>
                             <div class="input-item">
                                 <input id="blogCSSR" type="checkbox" name="cssr">
-                                <label class="label-blogCSSR" for="blogCSSR">Читаю <a class="linkToBlog" href="http://blog.csssr.ru"
-                                        title="blog.csssr.ru" target="_blank">blog.csssr.ru</a></label>
+                                <label class="label-blogCSSR" for="blogCSSR">Читаю </label><a class="linkToBlog" href="http://blog.csssr.ru"
+                                    title="blog.csssr.ru" target="_blank">blog.csssr.ru</a>
                             </div>
                             <div class="input-item">
                                 <input type="checkbox" name="lazy" id="lazy">
@@ -172,7 +174,7 @@
                     <div class="article">
                         <h4>Уровень владения JavaScript</h4>
                     </div>
-                    <div class="sliderContainer bottom-line">
+                    <div class="sliderContainer">
                         <input class="slider" type="range" min="1" max="100" value="50">
                         <ul class="deviders-box">
                             <li class="devider-vert-md"></li>
@@ -195,6 +197,9 @@
                             Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в
                             CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться
                             автоматически.</p>
+                        <textarea class="textarea" name="about-your-self" cols="3" rows="3" placeholder="Ну-ууу-уу...
+Ээээ...">Мне нравится заниматься вёрсткой и front-end, интересно всё новое в мире WEB UI.
+Готов учиться у опытных разработчиков и делиться своими навыками с другими.</textarea>
                     </div>
                 </section>
                 <section class="future-plans">
