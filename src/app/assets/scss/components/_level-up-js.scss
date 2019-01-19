@@ -1,0 +1,89 @@
+@import '_vars.scss';
+
+.level-up-js {
+    margin-bottom: 20px;
+
+    .article {
+        h4 {
+            margin-bottom: 32px;
+        }
+    }
+
+    .sliderContainer {
+        width: 100%;
+        display: block;
+
+        &.bottom-line {
+            margin-left: -3px;
+        }
+
+        @import '../elements/_input__range.scss';
+
+        ul {
+            margin-bottom: 2px;
+
+            &.deviders-box {
+                position: relative;
+
+                li {
+                    position: absolute;
+
+                    &.devider-vert-md {
+                        top: -18px;
+                        display: inline-block;
+                        vertical-align: top;
+                        height: 26px;
+                        width: 14px;
+                        background: url('../img/vert_devider_md@1X.png') no-repeat;
+                    }
+
+                    &.devider-vert-sm {
+                        top: -16px;
+                        height: 11px;
+                        width: 20px;
+                        background: url('../img/vert_devider_sm@1X.png') no-repeat;
+                    }
+
+                    &:first-child {
+                        left: 2px;
+                    }
+
+                    &:nth-child(2) {
+                        left: 142px;
+                    }
+
+                    &:nth-child(3) {
+                        left: 368px;
+                    }
+
+                    &:last-child {
+                        right: -13px;
+                    }
+                }
+            }
+
+            &.devider-steps {
+                display: grid;
+                grid-template-columns: 147px 228px 259px 142px;
+                padding-top: 11px;
+
+                li {
+                    &:first-child {
+                        strong {
+                            // padding-left: 4px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    &:last-child {
+                        padding-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

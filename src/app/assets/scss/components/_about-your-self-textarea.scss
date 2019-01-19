@@ -1,0 +1,16 @@
+@import '_vars.scss';
+
+.about-your-self-textarea {
+    .article {
+        h4 {
+            margin-bottom: 4px;
+        }
+
+        p {
+            padding-left: 2px;
+            letter-spacing: -.05px;
+        }
+    }
+
+    @import '../elements/_textarea.scss';
+}
