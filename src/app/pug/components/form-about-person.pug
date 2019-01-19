@@ -7,10 +7,11 @@ mixin form-item( kind, id, label, name, value )
             .bottom-line
         
 form(autocomplete='off', name='about-person')
-    ul.form-item-list
-        +form-item('text', 'form-name',  'Полное ФИО', 'form-name', userProfile.fio)
-        +form-item('text', 'form-year',  'Год рождения', 'form-year', userProfile.year)
-        +form-item('text', 'form-location',  'Место жительства', 'form-location', userProfile.location)
-        +form-item('text', 'form-skype',  'Скайп', 'form-skype', userProfile.skype)
-        +form-item('email', 'form-email',  'Почта', 'form-email', userProfile.mail)
+    fieldset
+        ul.form-item-list
+            +form-item('text', 'form-name',  'Полное ФИО', 'form-name', userProfile.fio)
+            +form-item('text', 'form-year',  'Год рождения', 'form-year', userProfile.year)
+            +form-item('text', 'form-location',  'Место жительства', 'form-location', userProfile.location)
+            +form-item('text', 'form-skype',  'Скайп', 'form-skype', userProfile.skype)
+            +form-item('email', 'form-email',  'Почта', 'form-email', userProfile.mail)
 

@@ -1,9 +1,9 @@
 mixin future-plans(id, type, name, label, isChecked)
-    li.input-item(role='radio')
+    li.input-item
         input(type=type, id=id, name=name, checked=isChecked)
         label(for=id)= label
         
 +future-plans('html', 'radio', 'future-plans', 'Верстать')
-+future-plans('js', 'radio', 'future-plans', 'Прокачиваться в JS', 'true')
++future-plans('js', 'radio', 'future-plans', 'Прокачиваться в JS', 'checked')
 +future-plans('manager', 'radio', 'future-plans', 'Менеджерство')
 +future-plans('other', 'radio', 'future-plans', 'Другое')
