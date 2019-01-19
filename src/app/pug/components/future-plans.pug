@@ -1,5 +1,5 @@
 mixin future-plans(id, type, name, label, isChecked)
-    li.input-item
+    li.input-item(role='radio')
         input(type=type, id=id, name=name, checked=isChecked)
         label(for=id)= label
         
