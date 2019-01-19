@@ -77,9 +77,12 @@
                 letter-spacing: -.075px;
             }
         }
+
+        @import './components/_tech-list.scss';
+
     }
 
-    .about-your-self {
+    .about-your-self-textarea {
         .article {
             h4 {
                 margin-bottom: 4px;
@@ -90,6 +93,8 @@
                 letter-spacing: -.05px;
             }
         }
+
+        @import './elements/_textarea.scss';
     }
 
     .level-up-js {
@@ -180,13 +185,9 @@
         }
     }
 
-    @import './components/_tech-list.scss';
-
     @import './components/_input-item.scss';
 
     @import './components/_future-plans.scss';
-
-    @import './elements/_textarea.scss';
 
     footer {
         padding-bottom: 60px;
