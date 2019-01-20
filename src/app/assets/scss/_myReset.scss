@@ -46,8 +46,7 @@ input,
 label,
 select,
 textarea,
-button,
-img {
+button {
     &:hover {
         cursor: pointer;
     }
