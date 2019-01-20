@@ -90,18 +90,19 @@
             .form-item {
                 display: flex;
 
-                input[type='date'] {
-                    letter-spacing: -.25px;
-                    position: relative;
-                    top: -12px;
-                    left: 30px;
-                }
-
                 .calendar {
                     position: relative;
+                    width: 212px;
+
+                    input[type='text'] {
+                        letter-spacing: -.25px;
+                        position: relative;
+                        top: -7px;
+                        left: 30px;
+                    }
 
                     .bottom-line {
-                        width: 212px;
+                        width: 100%;
                         height: 60px;
                         position: absolute;
                         top: 32px;

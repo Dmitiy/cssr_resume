@@ -17,8 +17,7 @@ textarea {
 
     &.textarea {
         padding-left: 4px;
-        // background-image: url(../img/line@1X.png);
-        background-repeat: repeat-x;
-        overflow-x: hidden;
+        background: transparent url(../img/textarea-bg.png) repeat-y 0 48px;
+        background-size: 100%;
     }
 }

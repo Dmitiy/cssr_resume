@@ -3,6 +3,10 @@
 .level-up-js {
     margin-bottom: 20px;
 
+    &.wrapper {
+        margin-right: 100px;
+    }
+
     .article {
         h4 {
             margin-bottom: 32px;
@@ -18,6 +22,12 @@
         }
 
         @import '../elements/_input__range.scss';
+
+        input[type='range'] {
+            position: relative;
+            top: -9px;
+            left: -3px;
+        }
 
         ul {
             margin-bottom: 2px;
@@ -57,14 +67,14 @@
                     }
 
                     &:last-child {
-                        right: -13px;
+                        right: 5px;
                     }
                 }
             }
 
             &.devider-steps {
                 display: grid;
-                grid-template-columns: 147px 228px 259px 142px;
+                grid-template-columns: 146px 228px 258px 142px;
                 padding-top: 11px;
 
                 li {

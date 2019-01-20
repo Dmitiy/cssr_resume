@@ -8,7 +8,7 @@
         mail: 'shkarlat.dmitry@yandex.ru'
     }
 
-<!DOCTYPE html>
+<!doctype html>
 html(lang="ru")
     head
         include ../includes/meta
@@ -17,10 +17,9 @@ html(lang="ru")
         .page
             .helper-image__stamp
                 img(src="assets/img/secret@1X.png", alt="секретно заполнено собственноручно", title='секретно заполнено собственноручно')
-            .wrapper
-                header
-                    include ../components/header
-                main
-                    block content
-                footer
-                    include ../components/footer
+            header.wrapper
+                include ../components/header
+            main
+                block content
+            footer.wrapper
+                include ../components/footer
