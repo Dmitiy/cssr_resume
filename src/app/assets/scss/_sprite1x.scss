@@ -1,0 +1,50 @@
+.icon {
+    background: url('../img/sprite/sprite1X.png') no-repeat top left;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url('../img/sprite/sprite-retina1X.png') no-repeat top left;
+        background-size: 25px 142px;
+    }
+
+    &.check1X {
+        background-position: 0 0;
+        width: 15px;
+        height: 18px;
+    }
+
+    &.circle1X {
+        background-position: 0 -22px;
+        width: 25px;
+        height: 27px;
+    }
+
+    &.cube1X {
+        background-position: 0 -53px;
+        width: 14px;
+        height: 13px;
+    }
+
+    &.dot1X {
+        background-position: 0 -70px;
+        width: 16px;
+        height: 18px;
+    }
+
+    &.triangle1X {
+        background-position: 0 -92px;
+        width: 13px;
+        height: 11px;
+    }
+
+    &.vert_devider_md1X {
+        background-position: 0 -107px;
+        width: 11px;
+        height: 17px;
+    }
+
+    &.vert_devider_sm1X {
+        background-position: 0 -128px;
+        width: 14px;
+        height: 10px;
+    }
+}

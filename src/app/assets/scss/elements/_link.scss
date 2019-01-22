@@ -1,7 +1,7 @@
 @import '_vars.scss';
 
 a {
-    color: #1f5f97;
+    color: $link-color;
     font-size: inherit;
     font-family: inherit;
     font-size: 21px;
@@ -20,6 +20,6 @@ a {
         left: 0;
         display: inline-block;
         width: 100%;
-        border-bottom: 1px solid #1f5f97;
+        border-bottom: 1px solid $link-color;
     }
 }

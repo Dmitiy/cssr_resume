@@ -11,7 +11,7 @@
     @import './elements/_link.scss';
 
     label {
-        color: #000;
+        color: $label-color;
         font-size: 21px;
         line-height: 25px;
         font-family: 'PT_Sans-Web-Bold';

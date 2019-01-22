@@ -3,7 +3,7 @@
 input[type='text'],
 input[type='email'],
 input[type='date'] {
-    color: #231f20;
+    color: $input-color;
     font-size: 30px;
     line-height: 36px;
     font-family: 'Courier New';

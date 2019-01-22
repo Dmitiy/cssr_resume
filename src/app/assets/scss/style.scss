@@ -6,6 +6,8 @@
 
 @import '_default.scss';
 
+@import '_sprite2x.scss';
+
 .page {
     width: $w-page-default;
     max-width: 100%;
@@ -22,6 +24,7 @@
 
     .logo,
     .logo a,
+    .icon,
     .helper-image__stamp {
         display: inline-block;
         vertical-align: top;

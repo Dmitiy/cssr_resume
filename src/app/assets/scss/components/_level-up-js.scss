@@ -78,12 +78,6 @@
                 padding-top: 11px;
 
                 li {
-                    &:first-child {
-                        strong {
-                            // padding-left: 4px;
-                        }
-                    }
-
                     &:nth-child(3) {
                         display: flex;
                         flex-direction: column;
