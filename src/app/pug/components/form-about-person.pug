@@ -1,17 +1,15 @@
-mixin form-item( kind, id, label, name, value )
+mixin form-item( kind, id, label, name, value, tabindex )
     li.form-item
         .form-item__prepend
             label(for= id)= label
         .form-item__append
-            input(type= kind, id= id, name= name, value= value)
+            input(type= kind, id= id, name= name, value= value, tabindex= tabindex)
             .bottom-line
         
-form(autocomplete='off', name='about-person')
-    fieldset
-        ul.form-item-list
-            +form-item('text', 'form-name',  'Полное ФИО', 'form-name', userProfile.fio)
-            +form-item('text', 'form-year',  'Год рождения', 'form-year', userProfile.year)
-            +form-item('text', 'form-location',  'Место жительства', 'form-location', userProfile.location)
-            +form-item('text', 'form-skype',  'Скайп', 'form-skype', userProfile.skype)
-            +form-item('email', 'form-email',  'Почта', 'form-email', userProfile.mail)
+ul.form-item-list
+    +form-item('text', 'form-name',  'Полное ФИО', 'form-name', userProfile.fio, '1')
+    +form-item('text', 'form-year',  'Год рождения', 'form-year', userProfile.year, '2')
+    +form-item('text', 'form-location',  'Место жительства', 'form-location', userProfile.location, '3')
+    +form-item('text', 'form-skype',  'Скайп', 'form-skype', userProfile.skype, '4')
+    +form-item('email', 'form-email',  'Почта', 'form-email', userProfile.mail, '5 ')
 
