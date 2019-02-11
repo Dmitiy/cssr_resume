@@ -66,3 +66,5 @@ xcuserdata/
 ###########
 node_modules/
 .vscode
+/dist
+/public
